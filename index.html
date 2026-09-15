@@ -3,37 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Aditi Nanda - Personal Portfolio</title>
     <style>
+        /* Base Styles for a clean, modern look */
+        :root {
+            --primary-color: #cc0033; /* Rutgers Scarlet Red */
+            --text-main: #1f2937;
+            --text-light: #4b5563;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
             margin: 0;
+            padding: 0;
         }
+
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        /* 1. Header & Personal Statement Section */
+        header {
             text-align: center;
+            padding: 40px 0;
         }
-        h1 {
-            color: #2c3e50;
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        p {
-            font-size: 1.2em;
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .personal-statement {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            font-weight: 500;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* 2. Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+
+        /* 3. Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            margin-top: 0;
+            color: var(--text-main);
+        }
+
+        .project-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            flex-grow: 1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>If you are seeing this, the GitHub repository is working perfectly!</p>
+        
+        <!-- SECTION 1: Personal Statement -->
+        <header>
+            <!-- Headshot Image -->
+            <img src="Headshot.jpeg" alt="Professional Headshot of Aditi Nanda" class="profile-img">
+            
+            <h1>Aditi Nanda</h1>
+            <p class="personal-statement">
+                I’m a Supply Chain Management undergraduate student at Rutgers Business School with an interest in using data, technology, and analytical skills to improve business and supply chain operations.
+            </p>
+        </header>
+
+        <!-- SECTION 2: Skills Showcase -->
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <ul class="skills-list">
+                <li>Microsoft Excel (Data Analysis, Formulas, Pivot Tables)</li>
+                <li>Problem Solving</li>
+                <li>Microsoft PowerPoint & Word</li>
+                <li>Communication & Teamwork</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3: Projects Section -->
+        <section id="projects">
+            <h2>Professional Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">Returns & Inventory Process Analysis</h3>
+                    <p><strong>AR Importers, LLC</strong></p>
+                    <p class="project-description">
+                        Reviewed the company’s returns process by examining return documentation and product condition to determine whether products could be returned to inventory or classified as damaged. Developed an understanding of how returns decisions affect inventory management, operational efficiency, and customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">E-Commerce & Supply Chain Operations Analysis</h3>
+                    <p><strong>AR Importers, LLC</strong></p>
+                    <p class="project-description">
+                        Researched competitor pricing and reviewed website operations, customer communications, and international supplier interactions to better understand how e-commerce activities connect with supply chain operations. Gained insight into supplier communication, product management, pricing decisions, and the role of supply chain processes in supporting business and customer needs.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Aditi Nanda. All Rights Reserved.</p>
+        </footer>
+
     </div>
+
 </body>
 </html>
