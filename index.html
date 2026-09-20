@@ -117,8 +117,27 @@
         .project-description {
             color: var(--text-light);
             font-size: 0.95rem;
-            margin-bottom: 0;
+            margin-bottom: 20px; /* Restored spacing for the button */
             flex-grow: 1;
+        }
+
+        /* Button Styling added back */
+        .project-link {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: var(--primary-color);
+            color: white;
         }
 
         footer {
@@ -168,6 +187,7 @@
                     <p class="project-description">
                         Reviewed the company’s returns process by examining return documentation and product condition to determine whether products could be returned to inventory or classified as damaged. Developed an understanding of how returns decisions affect inventory management, operational efficiency, and customer satisfaction.
                     </p>
+                    <a href="https://www.tradeindia.com/ar-importers-llc-11051002/" target="_blank" class="project-link">View Company Reference</a>
                 </div>
 
                 <!-- Project 2 -->
@@ -177,6 +197,7 @@
                     <p class="project-description">
                         Researched competitor pricing and reviewed website operations, customer communications, and international supplier interactions to better understand how e-commerce activities connect with supply chain operations. Gained insight into supplier communication, product management, pricing decisions, and the role of supply chain processes in supporting business and customer needs.
                     </p>
+                    <a href="https://www.exporthub.com/ar-importers/" target="_blank" class="project-link">View Company Reference</a>
                 </div>
 
             </div>
